@@ -2,6 +2,7 @@ require 'watir'
 
 def main
 
+  # from origin url: https://americanliterature.com/author/w-w-jacobs/short-story/the-monkeys-paw
   lines = File.readlines('monkeys_paw.txt').map(&:chomp)
 
   chromedriver_path = File.join([File.absolute_path('../../../../../../'), 'opt', 'chromedriver', 'chromedriver'])
